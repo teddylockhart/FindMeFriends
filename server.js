@@ -1,5 +1,3 @@
-// Your server.js file should require the basic npm packages we've used in class: express, body-parser and path.
-
 // Dependencies
 // =============================================================
 var express = require("express");
@@ -21,7 +19,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Routing
 // =============================================================
 
-// require( './app/routing/apiRoutes' )( app );
+require( './app/routing/apiRoutes' )( app );
 require( './app/routing/htmlRoutes' )( app );
 
 // Starts the server to begin listening
